@@ -1,0 +1,69 @@
+{
+ "code_files_sha256": {
+  "tools/extract/common.py": "3af4aad4b6c3ba83cdd07093024a7cd93d3fcde4e933fb94f3cbf90b2ba58ccd",
+  "tools/extract/extractors.py": "699f0c59a259c2c714c68176487189a892321e90e5da961533aaf393d7de6023"
+ },
+ "code_git_sha": "0edd6ca4709c2879ec84ddc696e37fc2ebd73082",
+ "config_hash": "30d5b11c99ac",
+ "extractor": "MP-L-V4V0",
+ "extractor_cfg": {
+  "crop": {
+   "center": 0.3,
+   "dup": 0.25,
+   "gate": 1.0,
+   "hands": "static,complexity1,max2,det0.5",
+   "input": 256,
+   "min_forearm": 0.6,
+   "side": 2.0,
+   "vis": 0.5
+  },
+  "enable_segmentation": false,
+  "hand_crop": true,
+  "min_detection_confidence": 0.5,
+  "min_tracking_confidence": 0.5,
+  "model_complexity": 2,
+  "refine_face_landmarks": true,
+  "smooth_landmarks": true,
+  "static_image_mode": false,
+  "upscale_min_side": 0
+ },
+ "frozen_at": "2026-10-25T15:27:47+0900",
+ "hand_crop": {
+  "center": 0.3,
+  "dup": 0.25,
+  "enabled": true,
+  "gate": 1.0,
+  "hands": {
+   "max_num_hands": 2,
+   "min_detection_confidence": 0.5,
+   "model_complexity": 1,
+   "static_image_mode": true
+  },
+  "input": 256,
+  "min_forearm": 0.6,
+  "side": 2.0,
+  "vis": 0.5
+ },
+ "holistic_cfg": {
+  "enable_segmentation": false,
+  "min_detection_confidence": 0.5,
+  "min_tracking_confidence": 0.5,
+  "model_complexity": 2,
+  "refine_face_landmarks": true,
+  "smooth_landmarks": true,
+  "static_image_mode": false
+ },
+ "mediapipe_version": "0.10.21",
+ "name": "MP-L-V4V0",
+ "numpy_version": "1.26.4",
+ "opencv_version": "4.11.0",
+ "output": {
+  "flags": "(T,3) uint8 [pose found, left hand src, right hand src]; src 0 none / 1 holistic / 2 crop step",
+  "kp": "(T,553,4) float16 x,y image-normalised, z, score; pose33|face478|L21|R21",
+  "scores": "pose = visibility; face/hands = 1 if detected else 0",
+  "world": "(T,33,4) float16 pose_world_landmarks x,y,z (m, hip-centred), visibility"
+ },
+ "python_version": "3.12.3",
+ "upscale_min_side": 0,
+ "variant": "V4V0"
+}

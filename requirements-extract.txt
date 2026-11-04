@@ -1,0 +1,15 @@
+# Pose extraction (tools/extract) and canonicalisation (tools/canon). Separate environment,
+# pinned as frozen in configs/extract/mp_l_v4v0.json (Python 3.10-3.12; the extractor refuses to
+# run when the mediapipe version or the extractor source hashes differ from the frozen config).
+mediapipe==0.10.21
+numpy==1.26.4
+opencv-contrib-python==4.11.0.86
+h5py==3.16.0
+protobuf==4.25.9
+psutil==7.2.2
+matplotlib==3.10.9
+scipy
+pytest==9.1.1
+scikit-learn  # probes in tools/canon/fingerprint.py and quality.py
+# The RTMW3D candidate of the extractor bake-off (not used for the released data) needs
+# rtmlib and onnxruntime-gpu.

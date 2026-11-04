@@ -1,0 +1,74 @@
+{
+ "asl_citizen": {
+  "crop_share": 1.754,
+  "face": 100.0,
+  "frames": 3331,
+  "hand_given_wrist": 91.644,
+  "lhand": 33.083,
+  "pose": 100.0,
+  "rhand": 40.498
+ },
+ "autsl": {
+  "crop_share": 2.624,
+  "face": 98.967,
+  "frames": 2421,
+  "hand_given_wrist": 88.139,
+  "lhand": 89.013,
+  "pose": 100.0,
+  "rhand": 87.319
+ },
+ "how2sign": {
+  "crop_share": 3.321,
+  "face": 100.0,
+  "frames": 6995,
+  "hand_given_wrist": 96.09,
+  "lhand": 93.695,
+  "pose": 100.0,
+  "rhand": 95.726
+ },
+ "include": {
+  "crop_share": 4.642,
+  "face": 100.0,
+  "frames": 2522,
+  "hand_given_wrist": 84.974,
+  "lhand": 90.206,
+  "pose": 100.0,
+  "rhand": 79.778
+ },
+ "isign": {
+  "crop_share": 2.792,
+  "face": 99.975,
+  "frames": 7967,
+  "hand_given_wrist": 93.974,
+  "lhand": 90.599,
+  "pose": 100.0,
+  "rhand": 90.109
+ },
+ "lse": {
+  "crop_share": 1.228,
+  "face": 97.925,
+  "frames": 13638,
+  "hand_given_wrist": 98.648,
+  "lhand": 85.438,
+  "pose": 97.954,
+  "rhand": 90.05
+ },
+ "phoenix14t": {
+  "crop_share": 5.206,
+  "face": 99.549,
+  "frames": 3995,
+  "hand_given_wrist": 84.327,
+  "lhand": 70.013,
+  "pose": 100.0,
+  "rhand": 80.976
+ },
+ "wlasl": {
+  "crop_share": 4.602,
+  "face": 99.438,
+  "frames": 2847,
+  "hand_given_wrist": 93.513,
+  "lhand": 47.067,
+  "pose": 99.438,
+  "rhand": 62.838
+ }
+}

@@ -1,0 +1,13 @@
+# Pretraining and evaluation. Tested with torch 2.6.0 (Linux, CUDA 12.4, Python 3.10; GPU
+# runs) and torch 2.11.0 (Windows, CUDA 12.8, Python 3.11). Install the CUDA build of torch
+# that matches your driver, e.g.
+#   pip install torch==2.6.0 --index-url https://download.pytorch.org/whl/cu124
+torch>=2.6
+numpy==2.4.6
+h5py==3.16.0
+PyYAML==6.0.3
+scikit-learn==1.9.1
+scipy==1.17.1
+matplotlib==3.11.2
+pytest==9.1.1
+# optional: triton (torch.compile on Linux), installed with the Linux torch wheel

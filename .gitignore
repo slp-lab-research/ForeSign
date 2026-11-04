@@ -1,0 +1,33 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+*.egg-info/
+
+# Data, checkpoints and outputs (never committed)
+runs/
+results/
+cache/
+logs/
+*.h5
+*.hdf5
+*.pt
+*.pth
+*.ckpt
+*.npz
+*.pkl
+*.mp4
+*.webm
+*.avi
+
+# Annotation files obtained from the datasets (build them with tools/build_*; licence-restricted)
+data_ann/*
+!data_ann/README.md
+!data_ann/canon_exclude.json
+
+# Local secrets / environment
+.env
+*cookies*.txt
+
+# local tool state
+.omc/
