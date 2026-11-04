@@ -145,26 +145,30 @@ No data is distributed. Obtain each dataset from its authors and use it under it
 require a signed agreement or are restricted to non-commercial research. Pretraining pool
 (`foresign/canon_splits.py`) and evaluation sets:
 
-| dataset | used for | source |
-|---|---|---|
-| AUTSL | pretraining (train split), ISLR | https://cvml.ankara.edu.tr/datasets/ |
-| WLASL (WLASL2000) | pretraining (train split), ISLR | https://dxli94.github.io/WLASL/ |
-| ASL Citizen | pretraining, ISLR (standard recipe) | https://www.microsoft.com/en-us/research/project/asl-citizen/ |
-| LSA64 | pretraining (signers 1-8), ISLR | https://facundoq.github.io/datasets/lsa64/ |
-| RWTH-PHOENIX-Weather 2014T | pretraining (train split, minus overlap), CSLR | https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX-2014-T/ |
-| RWTH-PHOENIX-Weather 2014 (multisigner) | CSLR | https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX/ |
-| How2Sign | pretraining (train split); dataset-ID probe | https://how2sign.github.io/ |
-| OpenASL | pretraining | https://github.com/chevalierNoir/OpenASL |
-| YouTube-ASL | pretraining | https://github.com/google-research/google-research/tree/master/youtube_asl |
-| ChicagoFSWild / ChicagoFSWild+ | pretraining | https://home.ttic.edu/~klivescu/ChicagoFSWild.htm |
-| INCLUDE | pretraining | https://zenodo.org/records/4010759 |
-| iSign | pretraining | https://exploration-lab.github.io/iSign/ |
-| LSE_UVIGO | pretraining | see the dataset publication (Docío-Fernández et al., LREC 2020) |
-| LSA-T | pretraining | https://github.com/midusi/LSA-T |
-| Slovo | pretraining | https://github.com/hukenovs/slovo |
-| KArSL | pretraining | https://hamzah-luqman.github.io/KArSL/ |
-| Sign2MINT | pretraining | https://sign2mint.de/ |
-| Ghanaian Sign Language lexicon (HANDS! lab) | pretraining | see the dataset publication |
+| dataset | sign language | data type | task(s) the annotations support | used here for | source |
+|---|---|---|---|---|---|
+| AUTSL | Turkish SL (TİD) | isolated signs (226 classes), RGB-D studio recordings | ISLR | pretraining (train split), ISLR | https://cvml.ankara.edu.tr/datasets/ |
+| WLASL (WLASL2000) | American SL (ASL) | isolated signs (2,000 glosses), web videos | ISLR | pretraining (train split), ISLR | https://dxli94.github.io/WLASL/ |
+| ASL Citizen | American SL (ASL) | isolated signs (2,731 glosses), crowdsourced webcam | ISLR | pretraining, ISLR (standard recipe) | https://www.microsoft.com/en-us/research/project/asl-citizen/ |
+| LSA64 | Argentinian SL (LSA) | isolated signs (64 classes), 10 signers, controlled recordings | ISLR | pretraining (signers 1-8), ISLR | https://facundoq.github.io/datasets/lsa64/ |
+| RWTH-PHOENIX-Weather 2014T | German SL (DGS) | continuous sentences, TV weather forecasts; gloss + German translation | CSLR, SLT | pretraining (train split, minus overlap), CSLR | https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX-2014-T/ |
+| RWTH-PHOENIX-Weather 2014 (multisigner) | German SL (DGS) | continuous sentences, TV weather forecasts; gloss | CSLR | CSLR | https://www-i6.informatik.rwth-aachen.de/~koller/RWTH-PHOENIX/ |
+| How2Sign | American SL (ASL) | continuous sentences, instructional videos; English translation | SLT | pretraining (train split); dataset-ID probe | https://how2sign.github.io/ |
+| OpenASL | American SL (ASL) | continuous sentences, online videos (news, vlogs); English subtitles | SLT | pretraining | https://github.com/chevalierNoir/OpenASL |
+| YouTube-ASL | American SL (ASL) | continuous signing, YouTube videos; English captions | SLT | pretraining | https://github.com/google-research/google-research/tree/master/youtube_asl |
+| ChicagoFSWild / ChicagoFSWild+ | American SL (ASL) | fingerspelling sequences in the wild; letter transcriptions | fingerspelling recognition | pretraining | https://home.ttic.edu/~klivescu/ChicagoFSWild.htm |
+| INCLUDE | Indian SL (ISL) | isolated signs (263 words) | ISLR | pretraining | https://zenodo.org/records/4010759 |
+| iSign | Indian SL (ISL) | continuous sentences; English translation | SLT | pretraining | https://exploration-lab.github.io/iSign/ |
+| LSE_UVIGO | Spanish SL (LSE) | isolated signs and continuous signing; gloss annotations | ISLR, CSLR | pretraining | see the dataset publication (Docío-Fernández et al., LREC 2020) |
+| LSA-T | Argentinian SL (LSA) | continuous sentences, TV news; Spanish subtitles | SLT | pretraining | https://github.com/midusi/LSA-T |
+| Slovo | Russian SL (RSL) | isolated signs (1,000 classes), crowdsourced | ISLR | pretraining | https://github.com/hukenovs/slovo |
+| KArSL | Arabic SL (Saudi) | isolated signs (502 classes), Kinect recordings | ISLR | pretraining | https://hamzah-luqman.github.io/KArSL/ |
+| Sign2MINT | German SL (DGS) | isolated signs, STEM lexicon | ISLR (lexicon) | pretraining | https://sign2mint.de/ |
+| Ghanaian Sign Language lexicon (HANDS! lab) | Ghanaian SL | isolated signs, lexicon | ISLR (lexicon) | pretraining | see the dataset publication |
+
+ISLR = isolated sign language recognition, CSLR = continuous sign language recognition (gloss
+sequences), SLT = sign language translation (spoken-language text). Only poses are used for
+pretraining; text annotations are not used.
 
 Evaluation clips (val/test splits, the PHOENIX cross-release overlap, and duplicates of evaluation
 clips listed in `data_ann/canon_exclude.json`) are excluded from pretraining.
