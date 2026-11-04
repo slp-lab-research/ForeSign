@@ -179,14 +179,14 @@ TBD (paper under review). An overview of the experiment set is in `docs/experime
 
 ## Vendored code and licence
 
-This code is released under the MIT License (`LICENSE`).
+This code is released under the MIT License (see [LICENSE](LICENSE)).
 
 `foresign/_vendor/resona/` contains the minimal modules of the lab's earlier code (RESONA) that the
 model imports: `models/v4_blocks.py` (DSTformer body, attention, RMSNorm) and
 `data/language_map.py` (dataset -> sign language). `v4_blocks.py` is ported with modifications
 from **MotionBERT** (Zhu et al., ICCV 2023), which is licensed under the **Apache License 2.0**; its
-licence text is kept in `foresign/_vendor/resona/LICENSE.MotionBERT` and that file remains subject
-to it. See `foresign/_vendor/README.md`.
+licence text is kept in [foresign/_vendor/resona/LICENSE.MotionBERT](foresign/_vendor/resona/LICENSE.MotionBERT) and that file remains subject
+to it. See [foresign/_vendor/README.md](foresign/_vendor/README.md).
 
 Notes: `design §x` references in some docstrings point to the internal design record of the
 earlier project phase, which is not part of this release. The resona77 (2D) input format still
