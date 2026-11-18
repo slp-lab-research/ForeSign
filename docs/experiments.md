@@ -1,7 +1,7 @@
 # Experiments (overview)
 
-Short public summary of the experiment set run with this code. Numbers are not reported here
-(paper under review); see the paper once published. Detailed, pre-registered protocols are in
+Short public summary of the experiment set run with this code. Headline numbers are in
+`docs/results_phase2.md` (paper in preparation). Detailed, pre-registered protocols are in
 `docs/design/2026-10-30-phase2-c77-3d-adaptation.md`.
 
 ## Data

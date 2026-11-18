@@ -5,7 +5,7 @@ Self-supervised pose JEPA for sign language. ForeSign pretrains a spatio-tempora
 (joint-embedding predictive architecture with an EMA target encoder), and evaluates the frozen and
 fine-tuned encoder on isolated (ISLR) and continuous (CSLR) sign language recognition.
 
-This repository contains the full pipeline used for the paper (under review):
+This repository contains the full pipeline used for the paper (in preparation):
 
 1. **extract**: one frozen pose extractor for every corpus (MediaPipe Holistic legacy,
    `mediapipe==0.10.21`, model complexity 2, refined face, plus a MediaPipe Hands crop step for
@@ -175,7 +175,9 @@ clips listed in `data_ann/canon_exclude.json`) are excluded from pretraining.
 
 ## Results
 
-TBD (paper under review). An overview of the experiment set is in `docs/experiments.md`.
+Headline phase-2 results (snapshot 2026-11-08) are in `docs/results_phase2.md`; the full set of
+results will be in the paper (in preparation). An overview of the experiment set is in
+`docs/experiments.md`.
 
 ## Vendored code and licence
 
